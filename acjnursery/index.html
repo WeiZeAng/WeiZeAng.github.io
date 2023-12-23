@@ -5,9 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Agency - Start Bootstrap Theme</title>
+        <title>Ang Chin Joo Nursery SDN BHD</title>
+        <!-- SlideShow-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/logo-green.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -16,22 +18,47 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+    <style>
+    .mySlides {display:none}
+    .w3-left, .w3-right, .w3-badge {cursor:pointer}
+    .w3-badge {height:13px;width:13px;padding:0}
+    </style>
+    <style>
+        .map-responsive{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-responsive iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+    </style>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+                <a class="navbar-brand" href="#page-top" ><img src="assets/img/logo-white.png" alt="..." /> <label class="lbl_company" style="font-size:20px">Ang Chin Joo Nursery Sdn Bhd</label></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#products"><label class="lbl_products">Products</label></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services"><label class="lbl_services">Services</label></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about"><label class="lbl_about">About</label></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery"><label class="lbl_gallery">Gallery</label></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact"><label class="lbl_contact">Contact</label></a></li>
+                        <select class="nav-item text-uppercase" id="select_language" style="background-color: transparent;color:white;border: 1px solid #fff;">
+                            <option value="es" style="background-color: black;color:orange">English</option>
+                            <option value="cs" style="background-color: black;color:orange">中文</option>
+                            <option value="my" style="background-color: black;color:orange">Melayu</option>
+                        </select>
                     </ul>
                 </div>
             </div>
@@ -39,126 +66,91 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome To Our Studio!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+                <div class="masthead-subheading"><label class="label_greeting">Welcome To Our Plantation!</label></div>
+                <div class="masthead-heading text-uppercase"><div class="label_sub_greeting"<p style='line-height:1;font-size:35px'>We have more than 30 years of experience in the field of planting <a href='#sawit'>oil palm</a> and <a href='#getah'>rubber</a> seedlings.</p></div></div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#products"><label class="lbl_view_more">View More</label></a>
             </div>
         </header>
-        <!-- Services-->
-        <section class="page-section" id="services">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
+        <section class="page-section bg-light" id="products">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase lbl_product">Products</h2>
+                    <h3 class="section-subheading text-muted lbl_product_sub">Provide best products and quality services for customers</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 1-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <a class="portfolio-link" data-bs-toggle="modal" style="text-align: center;" href="#portfolioModal1">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/sawit1.png" style="height: 300px;" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Threads</div>
-                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
+                                <div class="portfolio-caption-heading"><label class="lbl_sawit">Palm Tree Seedlings</label></div>
+                                <div class="portfolio-caption-subheading text-muted"><label class="lbl_sawit_sub">Height: 3-4 Feets, Clone: DxP Yangambi, AAR and others</label></div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 2-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                            <a class="portfolio-link" data-bs-toggle="modal" style="text-align: center;" href="#portfolioModal2">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/getah1.png" style="height: 300px;" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Explore</div>
-                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
+                                <div class="portfolio-caption-heading"><label class="lbl_getah">Rubber Tree Seedlings</label></div>
+                                <div class="portfolio-caption-subheading text-muted"><label class="lbl_getah_sub">Layer: 1/2/3 Layer, Clone: PB 350</label></div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 3-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                            <a class="portfolio-link" data-bs-toggle="modal"  style="text-align: center;" href="#portfolioModal3">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
+                                <img class="img-fluid" style="height: 300px;" src="assets/img/portfolio/APM1.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
+                                <div class="portfolio-caption-heading"><label class="lbl_apm">Rubber Tree Seedlings (APM)</label></div>
+                                <div class="portfolio-caption-subheading text-muted"><label class="lbl_apm_sub">Layer: 4-5 Layer, Clone: PB 350</label></div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
                         <!-- Portfolio item 4-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <a class="portfolio-link" data-bs-toggle="modal" style="text-align: center;" href="#portfolioModal4">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
+                                <img class="img-fluid" style="height: 300px;" src="assets/img/portfolio/4.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Lines</div>
-                                <div class="portfolio-caption-subheading text-muted">Branding</div>
+                                <div class="portfolio-caption-heading"><label class="lbl_durian">Durian Tree Seedlings</label></div>
+                                <div class="portfolio-caption-subheading text-muted"><label class="lbl_durian_sub">Clone: Musang King, Duri Hitam, Local Brand</label></div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
                         <!-- Portfolio item 5-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                            <a class="portfolio-link"  style="text-align: center;" data-bs-toggle="modal" href="#portfolioModal5">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
+                                <img class="img-fluid" style="height: 300px;" src="assets/img/portfolio/baja1.jpg" alt="..."/>
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Southwest</div>
-                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
+                                <div class="portfolio-caption-heading"><label class="lbl_baja">Organic Fertilizer</label></div>
+                                <div class="portfolio-caption-subheading text-muted">100% Organic, Type: Pallet/ Powder</div>
                             </div>
                         </div>
                     </div>
@@ -169,13 +161,48 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
+                                <img class="img-fluid" style="height: 300px;" src="assets/img/portfolio/6.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Window</div>
-                                <div class="portfolio-caption-subheading text-muted">Photography</div>
+                                <div class="portfolio-caption-heading"><label class="lbl_kebun_pajak">Pitaya Tree Seedling</label></div>
+                                <div class="portfolio-caption-subheading text-muted"><label class="lbl_kebun_pajak_sub">Kebun Pajak</label></div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase lbl_services"style="color:white" >Services</h2>
+                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+                </div>
+                <div class="row text-center" style="color:white" >
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-thumbs-up fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3"><label class="lbl_service_1">Quantity and Quality</label></h4>
+                        <p><label class="lbl_service_text_1">We have more than 30 years experience with plantation field. We always produces the best quality for our customer and always ready stock for our customer.</label></p>
+                    </div>
+                    <div class="col-md-4" >
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-truck-moving fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3"><label class="lbl_service_2">Transport and Delivery</label></label></h4>
+                        <p><label class="lbl_service_text_2">We have our own transporter and we will make sure he will deliver on the correct address and time. Before depart, we will inform the customer to double check the location and estimate arriving time. </label></p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-user-check fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3"><label class="lbl_service_3">Licenses</label></label></h4>
+                        <p><label class="lbl_service_text_3">We are a legal company with licenses approved by governments. We also have MPOB, RISDA, FELCA and others related licenses. </label></p>
                     </div>
                 </div>
             </div>
@@ -184,48 +211,48 @@
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase"><label class="lbl_about">About</label></h2>
+                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                 </div>
                 <ul class="timeline">
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                        <div class="timeline-image" ><img class="rounded-circle img-fluid" src="assets/img/about/quality1.jpg"alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
+                                <h4><lable class="lbl_service_1">Quality and Quantity</lable></h4>
+                                <!-- <h4 class="subheading">Our Humble Beginnings</h4> -->
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted"><label class="lbl_quality_sub">We have more than 30 years experience with plantation field. We always produces the best quality for our customer and always ready stock for our customer. The quality of our products is also recognized by the government because we provide a large number of saplings to FELDA, RISDA, and other companies every year.</label></p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/best-price.jpg" style="height: 100%;margin:auto auto;" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
+                                <h4><label class="lbl_price">Cheaper Price</label></h4>
+                                <!-- <h4 class="subheading">An Agency is Born</h4> -->
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted"><label class="lbl_price_sub">From time to time, we will launch preferential packages to give back to the public, and our prices are in line with the market so that you can buy with peace of mind and happy to buy. </label></p></div>
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/authenticate.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>December 2015</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
+                                <h4><label class="lbl_service_3">Licenses</label></h4>
+                                <!-- <h4 class="subheading">Transition to Full Service</h4> -->
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted"><label class="lbl_service_text_3">We are a legal company with licenses approved by governments. We also have MPOB, RISDA, FELCA and others related licenses.</label></p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/one-stop-solution.png" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>July 2020</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
+                                <h4></h4>
+                                <h4 class="subheading"><label class="lbl_solution">One-stop Solution</label></h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted"><label class="lbl_solution_sub">We also provide professional oil palm plantation management solutions. We will help customers fertilize, weed, prune, collect and sell oil palm fruit. Customers don't need to worry about manpower, management and other issues. We will help customers deal with perfection.</label></p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -242,35 +269,95 @@
                 </ul>
             </div>
         </section>
+        <!-- Gallery-->
+        <section class="page-section" id="gallery">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase"><label class="lbl_gallery">Gallery</label></h2>
+                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+                </div>
+                <div class="row align-items-center">
+                 
+                    <div class="row">
+                        <div class="column">
+                            <img src="assets/img/gallery/4.png" alt="Snow" style="width:100%">
+                        </div>
+                        <div class="column">
+                            <img src="assets/img/gallery/5.png" alt="Forest" style="width:100%">
+                        </div>
+                        <div class="column">
+                            <img src="assets/img/gallery/7.png" alt="Mountains" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img src="assets/img/gallery/1.png" alt="Snow" style="width:100%">
+                        </div>
+                        <div class="column">
+                            <img src="assets/img/gallery/3.png" alt="Forest" style="width:100%">
+                        </div>
+                        <div class="column">
+                            <img src="assets/img/gallery/6.png" alt="Mountains" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img src="assets/img/gallery/2.png" alt="Snow" style="width:100%">
+                        </div>
+                        <div class="column">
+                            <img src="assets/img/gallery/8.png" alt="Forest" style="width:100%">
+                        </div>
+                        <div class="column">
+                            <img src="assets/img/gallery/9.png" alt="Mountains" style="width:100%">
+                        </div>
+                    </div>
+                    <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+                    
+                    .column {
+                        float: left;
+                        width: 33.33%;
+                        padding: 20px;
+                    }
+                    
+                    /* Clearfix (clear floats) */
+                    .row::after {
+                        content: "";
+                        clear: both;
+                        display: table;
+                    }
+                    </style>
+                </div>
+            </div>
+            </div>
+        </section>
         <!-- Team-->
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase"><label class="lbl_company">ANG CHIN JOO NURSERY SDN BHD</label></h2>
+                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                 </div>
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-6">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Parveen Anand</h4>
-                            <p class="text-muted">Lead Designer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <h4>Ang Ah Heng</h4>
+                            <p class="text-muted">Founder</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-6">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                            <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <h4>Ang Her Nian</h4>
+                            <p class="text-muted">Director</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <!-- <div class="col-lg-4">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
                             <h4>Larry Parker</h4>
@@ -279,38 +366,20 @@
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted"><label class="lbl_organization"> We are a company with nearly 34 years of experience in planting rubber and oil palm saplings. In 1988, we started to run our business. Although we encountered many difficulties at the beginning, we have stood firm to this day and worked hard to expand our business and serve the public.</label></p></div>
                 </div>
             </div>
         </section>
-        <!-- Clients-->
-        <div class="py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase"><label class="lbl_contact">CONTACT</label></h2>
+                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                 </div>
                 <!-- * * * * * * * * * * * * * * *-->
                 <!-- * * SB Forms Contact Form * *-->
@@ -321,30 +390,48 @@
                 <!-- to get an API token!-->
                 <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                     <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        <div class="col-md-6 " style="background-color: white;border-radius: 5px;">
+                            
+                            <div class="row" >
+                                <div class="col-md-6">
+                                    <h4 class="my-3">
+                                        <span class="fa-stack">
+                                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                        <i class="fas fa-map-marker-alt fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                        <label class="lbl_location">Our Location</label></h4>
+                                    <p class="text-muted"><label class="lbl_location_text">Lot 3928 Depan Sekolah Kebangsaan Bt 4, Jalan Jeniang, 08330 Gurun, Kedah </label></p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="my-3">
+                                        <span class="fa-stack">
+                                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                            <i class="fas fa-phone-alt fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        <label class="lbl_callus">Call Us</label></h5>
+                                    <p class="text-muted"><div class="lbl_callus_text">Official H/p: +60 16 881 5145<br />
+                                        Mr Ang: +60 19 445 5145<br />Mr Ang: +60 10 288 5145<br />
+                                        <!-- Ms Tan: +60 19 444 5145 <br /> -->
+                                        Email: support@acjnursery.com</div></p>
+                                        
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5 class="my-3">
+                                        <span class="fa-stack">
+                                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                        <i class="fas fa-clock fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                        <label class="lbl_working">Working Day & Time</label></h5>
+                                    <p class="text-muted"><label class="lbl_working_text">Day: All Days except public holiday <br />Time: 8:00am - 6:00pm </label></p>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.2691706379255!2d100.52298111476709!3d5.817609595784521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304b31c63df94fcf%3A0x80ce745ae1d4e0e5!2sAng%20Chin%20Joo%20Nursery%20Sdn%20Bhd!5e0!3m2!1sen!2smy!4v1677081838510!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
                         </div>
                     </div>
                     <!-- Submit success message-->
@@ -365,7 +452,7 @@
                     <!-- an error submitting the form-->
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit" hidden>Send Message</button></div>
                 </form>
             </div>
         </section>
@@ -373,15 +460,15 @@
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2022</div>
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; acjnursery.com 2023</div>
                     <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a> -->
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/profile.php?id=100063796009317" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <!-- <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a> -->
                     </div>
                     <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                        <!-- <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a> -->
+                        <!-- <a class="link-dark text-decoration-none" href="#!">Terms of Use</a> -->
                     </div>
                 </div>
             </div>
@@ -397,18 +484,26 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                    <h2 class="text-uppercase"><label class="lbl_sawit">Palm Tree Seedlings</label></h2>
+                                    <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." /> -->
+                                    <div class="w3-content w3-display-container" style="max-width:800px">
+                                        <img class="mySlides mySlides1" src="assets/img/portfolio/sawit1.png" style="width:30%;height: 30%;text-align: center;margin: auto auto;">
+                                        <img class="mySlides mySlides1" src="assets/img/portfolio/sawit2.jpg" style="width:30%;height: 30%;text-align: center;margin: auto auto;">
+                                        <img class="mySlides mySlides1" src="assets/img/portfolio/sawit3.jpg" style="width:30%;height: 30%;text-align: center;margin: auto auto;">
+                                        <img class="mySlides mySlides1" src="assets/img/portfolio/sawit4.jpg" style="width:30%;height: 30%;text-align: center;margin: auto auto;">
+                         
+                                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                                    </div>
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Client:</strong>
-                                            Threads
+                                            <strong>Clone:</strong>
+                                            DxP Yangambi, AAR Q6, KK ...
                                         </li>
                                         <li>
-                                            <strong>Category:</strong>
-                                            Illustration
+                                            <strong>Height:</strong>
+                                            3 Feets/ 4 Feets/ 5 Feets
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -429,12 +524,18 @@
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-8">
+                            <div class="col-lg-10">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                    <h2 class="text-uppercase"><label class="lbl_getah">Rubber Tree Seedlings</label></h2>
+                                    <div class="w3-content w3-display-container" style="max-width:800px">
+                                        <img class="mySlides mySlides2" src="assets/img/portfolio/getah1.png" style="width:30%;height: 30%;text-align: center;margin: auto auto;max-height: 300px;">
+                                        <img class="mySlides mySlides2" src="assets/img/portfolio/getah3.jpg" style="width:40%;height: 40%;text-align: center;margin: auto auto;">
+                                        <img class="mySlides mySlides2" src="assets/img/portfolio/getah2.jpg" style="width:50%;height: 50%;text-align: center;margin: auto auto;">
+                         
+                                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
+                                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
+                                    </div>
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
                                         <li>
@@ -467,9 +568,14 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                    <h2 class="text-uppercase"><label class="lbl_apm">Rubber Tree Seedlings (APM)</label></h2>
+                                    <div class="w3-content w3-display-container" style="max-width:800px">
+                                        <img class="mySlides mySlides3" src="assets/img/portfolio/APM1.jpg" style="width:30%;height: 30%;text-align: center;margin: auto auto;">
+                                        <img class="mySlides mySlides3" src="assets/img/portfolio/apm2.png" style="width:30%;height: 30%;text-align: center;margin: auto auto;">
+                                        
+                                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs3(-1)">&#10094;</button>
+                                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs3(1)">&#10095;</button>
+                                    </div>
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
                                         <li>
@@ -502,8 +608,7 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase"><label class="lbl_durian">Durian Tree Seedlings</label></h2>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
@@ -537,8 +642,7 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase"><label class="lbl_baja">Organic Fertilizer</label></h2>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
@@ -573,7 +677,6 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
@@ -599,8 +702,66 @@
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+      
+        <script src="js/language.js"></script>
+        
+    <script>
+        var slideIndex = 1;
+        showDivs1(slideIndex);
+        showDivs2(slideIndex);
+        showDivs3(slideIndex);
+        
+        function plusDivs(n) {
+            showDivs1( slideIndex += n);
+        }
+        function plusDivs2(n) {
+            showDivs2( slideIndex += n);
+        //    showDivs3(slideIndex);
+        }
+        function plusDivs3(n) {
+            showDivs3(slideIndex += n);
+            console.log(slideIndex);
+        }
+        
+        function showDivs1(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides1");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            // console.log(x.length);
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+        }
+        
+        function showDivs2(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides2");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+        }
+        
+        function showDivs3(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides3");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+    
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
